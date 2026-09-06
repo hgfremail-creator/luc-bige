@@ -1,0 +1,118 @@
+import type { GenericConcept } from './types'
+
+/**
+ * NIVEAU 11 — Alchimie symbolique.
+ * L'alchimie est ici lue, à la suite de Jung et d'autres, comme une projection
+ * de processus psychiques sur la matière. Les correspondances avec l'astrologie
+ * ne sont PAS historiquement universelles : ce sont des parallèles proposés.
+ */
+export const ALCHEMY_CONCEPTS: GenericConcept[] = [
+  a('materia-prima', 'Materia prima', '⛢',
+    "La « matière première » : la substance de départ de l'Œuvre, sans valeur apparente, méprisée, présente partout. « La pierre que les bâtisseurs ont rejetée. »",
+    "Symboliquement : ce en nous que nous jugeons sans intérêt ou honteux, et qui est justement le matériau de la transformation. On ne commence pas l'Œuvre avec de l'or, mais avec ce qu'on voudrait cacher.",
+    "Chercher un point de départ noble ou parfait ; refuser de travailler avec sa propre banalité, sa lourdeur, ses échecs.",
+    "Qu'est-ce qu'en moi je juge sans valeur et que je pourrais regarder comme un point de départ ?",
+    "Nommez une part de vous que vous trouvez « peu reluisante ». Écrivez ce qu'elle pourrait devenir si elle était travaillée plutôt que niée.",
+    'Rapproché de Saturne (le plomb) et parfois du Scorpion / de la Maison XII.'),
+  a('nigredo', 'Nigredo — l\'œuvre au noir', '●',
+    "Première grande phase : noircissement, putréfaction, dissolution des formes anciennes. Tout ce qui était structuré se décompose.",
+    "Symboliquement : la crise, la dépression traversée, le deuil, la nuit intérieure où les repères lâchent. Phase nécessaire : rien de neuf ne pousse sans que l'ancien pourrisse.",
+    "Vouloir sauter cette phase ; la fuir par la distraction ou l'anesthésie ; ou s'y installer et s'y complaire.",
+    "Qu'est-ce qui, en moi, est en train de se décomposer — et que je pourrais laisser faire plutôt que retenir ?",
+    "Repérez une fin que vous refusez. Écrivez-lui une courte lettre d'adieu, sans obligation de l'envoyer ni d'agir.",
+    'Rapproché du Scorpion, de Pluton, de la Maison VIII ; de la lame de la Mort au Tarot.'),
+  a('albedo', 'Albedo — l\'œuvre au blanc', '○',
+    "Deuxième phase : blanchiment, lavage, clarification. Après la putréfaction, la matière est purifiée ; une lumière lunaire, encore froide, apparaît.",
+    "Symboliquement : le calme après la crise, la lucidité nouvelle, le sentiment d'être « lavé ». On y voit clair, mais la chaleur (l'engagement, la vie) n'est pas encore revenue.",
+    "Prendre cette clarté pour l'arrivée ; se réfugier dans une paix détachée, une sagesse sans corps.",
+    "Sur quoi ai-je récemment « vu clair » — et cette clarté est-elle encore un peu froide, en attente d'incarnation ?",
+    "Notez une compréhension que vous avez eue mais pas encore mise en acte. Quel serait le premier geste concret ?",
+    'Rapproché de la Lune, du Cancer, parfois de la Vierge ; de la lame de la Lune ou de l\'Étoile.'),
+  a('citrinitas', 'Citrinitas — l\'œuvre au jaune', '☀',
+    "Phase intermédiaire (parfois fondue dans les autres) : jaunissement, aube solaire, retour de la chaleur et du désir après le blanc lunaire.",
+    "Symboliquement : le moment où la lucidité redevient vivante, où l'on retrouve l'envie, la direction, la joie de faire. Le soleil se lève sur ce qui a été compris.",
+    "Confondre ce regain d'énergie avec de l'euphorie et repartir dans la précipitation.",
+    "Où est-ce que l'envie revient en moi après une période éteinte ?",
+    "Repérez un projet qui recommence à vous attirer. Donnez-lui une seule première action, modeste, cette semaine.",
+    'Rapproché du Soleil, du Lion, du Sagittaire ; de la lame du Soleil.'),
+  a('rubedo', 'Rubedo — l\'œuvre au rouge', '◉',
+    "Phase finale : rougeoiement, union accomplie, la Pierre. Le résultat de l'Œuvre : une conscience à la fois lucide et incarnée, unifiée.",
+    "Symboliquement : l'intégration — non la perfection, mais la totalité vivante. Ce qui avait été séparé (esprit et corps, lumière et ombre) travaille désormais ensemble.",
+    "Se croire arrivé une fois pour toutes ; faire de l'accomplissement une identité figée.",
+    "À quoi ressemblerait, pour moi, une vie où mes parts opposées coopéreraient au lieu de se combattre ?",
+    "Décrivez en quelques lignes votre 'meilleure version' non pas idéale mais entière : forces ET failles au travail ensemble.",
+    'Rapproché du Soleil, de la conjonction, de la lame du Monde.'),
+  a('solve-coagula', 'Solve et Coagula', '⚗',
+    "Les deux gestes fondamentaux de l'Œuvre : dissoudre (solve) ce qui est trop rigide, puis fixer (coagula) ce qui est trop volatil. Alternance, jamais l'un sans l'autre.",
+    "Symboliquement : savoir tour à tour lâcher (une certitude, un rôle, une défense) et consolider (une décision, une pratique, une limite). La sagesse est dans le rythme entre les deux.",
+    "Ne faire que dissoudre (tout remettre en question, ne rien fixer) ou ne faire que coaguler (se rigidifier de peur du changement).",
+    "En ce moment, ai-je surtout besoin de dissoudre quelque chose de trop dur, ou de fixer quelque chose de trop flou ?",
+    "Identifiez une zone de rigidité (à assouplir) et une zone de flou (à structurer). Un petit geste pour chacune.",
+    'Solve rapproché de l\'Eau, de Neptune ; coagula de la Terre, de Saturne.'),
+  a('mercure-philo', 'Le Mercure des philosophes', '☿',
+    "Principe volatil, insaisissable, médiateur : l'« esprit » qui circule entre les états de la matière et rend les transformations possibles. À ne pas confondre avec le vif-argent ordinaire.",
+    "Symboliquement : la fonction qui relie le conscient et l'inconscient, l'intelligence mobile, la capacité de traduire d'un plan à l'autre. Sans Mercure, les principes restent figés côte à côte.",
+    "Le mental qui se met au service de la fuite : tout relativiser, glisser, ne jamais se laisser saisir.",
+    "Ma vivacité d'esprit relie-t-elle vraiment les choses, ou me sert-elle surtout à ne pas m'engager ?",
+    "Prenez deux domaines de votre vie qui ne communiquent pas. Écrivez trois ponts possibles entre eux.",
+    'Rapproché de Mercure, des Gémeaux, de la Vierge ; du Bateleur au Tarot.'),
+  a('soufre-sel', 'Soufre, Mercure, Sel', '🜍',
+    "La triade des principes : le Soufre (âme, désir, principe actif et combustible), le Mercure (esprit, lien, volatil), le Sel (corps, forme, ce qui reste après combustion).",
+    "Symboliquement : toute réalité intérieure a ces trois dimensions — ce qui la meut (Soufre), ce qui la relie (Mercure), ce qui la fixe (Sel). Un travail juste ne néglige aucune.",
+    "Réduire une personne (ou soi) à un seul principe : pur désir sans forme, pure forme sans désir, pur esprit sans corps.",
+    "Dans un projet qui me tient à cœur, où sont mon Soufre (le feu), mon Mercure (le lien), mon Sel (la forme concrète) ?",
+    "Décrivez un désir actuel selon les trois principes : sa flamme, ses connexions, sa forme matérielle possible.",
+    'Soufre ≈ Soleil/Mars ; Mercure ≈ Mercure ; Sel ≈ Saturne/Lune. Rapprochements proposés.'),
+  a('vaisseau', 'Le Vaisseau (vas)', '⚱',
+    "Le récipient scellé où se déroule l'Œuvre : il contient, protège et concentre. Sans vase clos, la matière s'évapore et rien ne se transforme.",
+    "Symboliquement : le cadre nécessaire au travail intérieur — un temps protégé, une relation de confiance (thérapie, amitié profonde), une pratique régulière, la discrétion. La transformation demande une enceinte.",
+    "Travailler « à ciel ouvert » : tout dire à tout le monde, ne jamais garder, disperser l'énergie du processus.",
+    "Ai-je un contenant fiable pour ce que je traverse en ce moment ?",
+    "Définissez un 'vase' pour le mois à venir : un moment fixe, un lieu, une personne ou un carnet où déposer votre travail intérieur.",
+    'Rapproché du Cancer, de la Maison IV, de la Lune ; parfois du Chariot (la carapace).'),
+  a('pierre-philosophale', 'La Pierre philosophale', '◆',
+    "Le but de l'Œuvre : une substance qui transmute les métaux vils en or et guérit. Jamais décrite littéralement de la même façon par deux auteurs.",
+    "Symboliquement : un état de conscience unifié et rayonnant, capable de « transmuter » l'ordinaire de la vie en sens. Non un pouvoir magique, mais une manière d'être entier qui transforme le rapport au réel.",
+    "Chercher la Pierre comme un objet, un secret, une technique à acquérir ; en faire une quête d'ego.",
+    "Qu'est-ce qui, dans ma vie, transforme déjà le banal en précieux — et comment le cultiver ?",
+    "Notez trois moments récents où une chose ordinaire vous a paru soudain pleine de sens. Qu'avaient-ils en commun ?",
+    'Rapproché du Soleil, de la lame du Monde, de l\'or philosophal.'),
+]
+
+function a(
+  id: string,
+  nom: string,
+  glyphe: string,
+  definition: string,
+  developpement: string,
+  ombre: string,
+  question: string,
+  exercice: string,
+  astro: string,
+): GenericConcept {
+  return {
+    id,
+    nom,
+    glyphe,
+    categorie: 'Alchimie',
+    sources: ['traditionnel', 'interpretation-symbolique', 'rapprochement-moderne'],
+    facets: {
+      definition,
+      symbole: glyphe + '  ' + nom,
+      imageArchetypale: developpement,
+      mythologie:
+        "Les traités alchimiques (Splendor Solis, Rosarium philosophorum, Atalanta fugiens…) mettent ces étapes en images : rois, reines, dragons, corbeaux, phénix.",
+      psychologie: developpement,
+      ombre,
+      potentielEvolutif:
+        "Prise comme métaphore d'un processus intérieur, cette étape offre un repère pour situer où l'on en est d'une transformation.",
+      questionReflexion: question,
+      exercice,
+      paralleleAlchimique: `Étape ou principe de l'Œuvre. Rapprochements astrologiques (proposés) : ${astro}`,
+      paralleleHermetique: "Principe de Transmutation : tout état peut être changé en un autre par un travail approprié.",
+    },
+  }
+}
+
+export const ALCHEMY_STAGES = ['nigredo', 'albedo', 'citrinitas', 'rubedo']
+export const ALCHEMY_BY_ID = Object.fromEntries(ALCHEMY_CONCEPTS.map((c) => [c.id, c])) as Record<string, GenericConcept>

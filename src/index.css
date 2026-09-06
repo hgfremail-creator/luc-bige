@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* Night / parchment palette */
+  --color-night-950: #0a0a14;
+  --color-night-900: #10101f;
+  --color-night-800: #171730;
+  --color-night-700: #21213f;
+  --color-night-600: #2f2f57;
+  --color-ink-100: #e8e3d6;
+  --color-ink-200: #cfc7b3;
+  --color-ink-300: #a99f86;
+  --color-ink-400: #7d7560;
+
+  --color-gold-300: #e8cf92;
+  --color-gold-400: #d4af65;
+  --color-gold-500: #b98f3e;
+  --color-ember: #c8623c;
+  --color-verdigris: #4f9d8f;
+  --color-lapis: #4463a8;
+  --color-amethyst: #8b6db0;
+
+  --color-parchment: #f4ecd8;
+  --color-parchment-dark: #e5d9bb;
+
+  --radius-card: 14px;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(139, 109, 176, 0.18), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 90% 20%, rgba(68, 99, 168, 0.12), transparent 55%),
+    var(--color-night-950);
+  background-attachment: fixed;
+  color: var(--color-ink-100);
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-ink-100);
+  text-wrap: balance;
+}
+
+::selection {
+  background: var(--color-gold-400);
+  color: var(--color-night-950);
+}
+
+/* Starfield used on hero + map */
+.starfield {
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 60% 70%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1.5px 1.5px at 80% 20%, rgba(232, 207, 146, 0.7), transparent),
+    radial-gradient(1px 1px at 35% 85%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 90% 55%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 10% 60%, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.parchment {
+  background:
+    linear-gradient(rgba(244, 236, 216, 0.04), rgba(244, 236, 216, 0.04)),
+    var(--color-night-800);
+  border: 1px solid rgba(212, 175, 101, 0.16);
+}
+
+.rule-gold {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold-500), transparent);
+}
+
+.link-underline {
+  text-decoration: underline;
+  text-decoration-color: rgba(212, 175, 101, 0.5);
+  text-underline-offset: 3px;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-gold-400);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--color-night-600);
+  border-radius: 8px;
+}

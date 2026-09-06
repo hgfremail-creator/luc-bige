@@ -1,0 +1,102 @@
+import type { GenericConcept } from './types'
+
+/**
+ * NIVEAU 9 — Astrologie et psychologie des profondeurs.
+ * Les concepts ci-dessous sont ceux de C. G. Jung et de ses continuateurs.
+ * Les liens avec l'astrologie sont des RAPPROCHEMENTS proposés par divers auteurs,
+ * pas une validation de l'astrologie par Jung.
+ */
+export const JUNG_CONCEPTS: GenericConcept[] = [
+  concept('archetype-jung', "L'archétype", 'Jung',
+    "Schéma universel de l'expérience humaine, logé dans l'inconscient collectif. Non un contenu précis, mais une disposition à ressentir et imaginer selon certaines formes (la Mère, le Héros, l'Ombre…).",
+    "L'archétype ne se voit jamais directement, seulement à travers des images concrètes : personnes, symboles, figures de rêve. En astrologie symbolique, on propose souvent de lire chaque planète comme une figure archétypale (le Soleil ≈ le héros/roi, Saturne ≈ le vieux sage/la limite).",
+    "S'identifier à un archétype produit l'inflation : la personne se prend pour la figure (le gourou, la victime, le sauveur) et perd sa mesure humaine.",
+    "Quelle figure intérieure prend parfois toute la place et parle à ma place ?",
+    "Notez une situation récente où vous avez réagi « en pilote automatique ». Quelle grande figure jouait à travers vous ?"),
+  concept('inconscient-collectif', "L'inconscient collectif", 'Jung',
+    "Couche de la psyché commune à toute l'humanité, distincte de l'inconscient personnel (fait de nos souvenirs refoulés). Elle contient les archétypes.",
+    "C'est l'hypothèse qui explique pourquoi des mythes semblables apparaissent dans des cultures sans contact. Des auteurs rapprochent cette idée du zodiaque vu comme une carte partagée des grands motifs humains.",
+    "Confondre inconscient collectif et vérité révélée : ce n'est pas une source d'autorité, c'est un réservoir d'images à interroger.",
+    "Quel mythe, quel conte, quelle image « me dépasse » et me touche pourtant profondément ?",
+    "Choisissez un mythe qui vous attire. Écrivez pourquoi il vous concerne, aujourd'hui, personnellement."),
+  concept('persona', "La persona", 'Jung',
+    "Le masque social : l'ensemble des rôles et attitudes que l'on présente au monde pour s'adapter et être accepté.",
+    "Une persona est nécessaire ; le problème naît quand on s'y identifie totalement et qu'on ne sait plus qui l'on est sans elle. Rapprochement fréquent avec l'Ascendant et la Maison I, lus comme « la manière d'apparaître ».",
+    "Se réduire à sa fonction, son titre, son image ; s'effondrer dès que le rôle est retiré (retraite, rupture, échec public).",
+    "Qui suis-je quand personne ne me regarde et que je n'ai aucun rôle à tenir ?",
+    "Listez trois rôles que vous jouez souvent. Pour chacun : qu'est-ce qu'il permet, qu'est-ce qu'il cache ?"),
+  concept('ombre', "L'Ombre", 'Jung',
+    "Tout ce que le moi a rejeté hors de son image de lui-même : défauts, désirs, talents jugés inacceptables. Refoulée, l'Ombre ne disparaît pas ; elle agit à notre insu.",
+    "On reconnaît son Ombre à l'intensité disproportionnée de nos jugements sur autrui : ce qui m'exaspère chez l'autre m'indique souvent une part de moi non assumée. En astrologie symbolique, chaque planète a une expression « d'ombre » décrite dans sa fiche.",
+    "La projection : attribuer systématiquement à d'autres (personnes, groupes) ce qu'on ne veut pas voir en soi. L'Ombre non reconnue gouverne alors la relation.",
+    "Quel trait est-ce que je condamne le plus fort chez les autres — et où le porte-je moi-même, autrement ?",
+    "Pendant une semaine, notez vos agacements vifs. En fin de semaine, cherchez pour chacun : « en quoi cela me ressemble-t-il, sous une autre forme ? »"),
+  concept('anima-animus', "Anima et Animus", 'Jung',
+    "La part contrasexuée intérieure : l'anima (image du féminin) chez l'homme, l'animus (image du masculin) chez la femme, selon la formulation classique de Jung — les lectures contemporaines l'élargissent au-delà du genre.",
+    "Cette figure intérieure est d'abord projetée sur les partenaires (coup de foudre, fascination). L'enjeu est de la reconnaître comme une part de soi à développer. Rapprochement courant avec Vénus, Mars, la Lune et la Maison VII.",
+    "Rester captif de la projection : chercher sans fin à l'extérieur la figure idéale, et reprocher au partenaire réel de ne pas coïncider avec elle.",
+    "Qu'est-ce que j'attends de l'autre que je pourrais commencer à cultiver en moi ?",
+    "Décrivez la personne 'idéale' telle que vous la rêviez adolescent. Quelles de ses qualités pourriez-vous développer vous-même ?"),
+  concept('soi', "Le Soi", 'Jung',
+    "Le centre et la totalité de la psyché, incluant conscient et inconscient. À distinguer de l'ego, qui n'en est que le centre conscient. Le Soi est vécu comme une instance qui oriente sans qu'on la contrôle.",
+    "Les symboles du Soi sont souvent des figures d'unité et de centre : le cercle, le mandala, l'enfant divin, la pierre. Rapprochement avec le Soleil (comme centre) et parfois avec l'ensemble du thème pris comme totalité.",
+    "L'ego qui se prend pour le Soi : sentiment d'être élu, mission grandiose, mépris des limites ordinaires.",
+    "Qu'est-ce qui, dans ma vie, semble me « vouloir » quelque part, au-delà de mes plans conscients ?",
+    "Dessinez un cercle et placez-y, librement, ce qui compose votre vie actuelle. Regardez ce qui est au centre, ce qui est en marge."),
+  concept('individuation', "L'individuation", 'Jung',
+    "Le processus de toute une vie par lequel une personne devient l'individu singulier qu'elle est, en intégrant peu à peu ses parts inconscientes (Ombre, anima/animus) autour de l'axe du Soi.",
+    "Ce n'est pas « se réaliser » au sens de la réussite, mais devenir entier plutôt que parfait. Beaucoup d'auteurs proposent de lire le parcours du thème (et le chemin du héros) comme une carte de l'individuation.",
+    "Croire l'individuation achevée ; en faire une performance spirituelle ; s'isoler au nom du 'travail sur soi'.",
+    "Vers quelle part de moi encore inconnue est-ce que je suis en train d'avancer ?",
+    "Repérez une qualité que vous admirez chez quelqu'un. Comment pourrait-elle devenir, à votre manière, une part de vous ?"),
+  concept('projection', "La projection", 'Jung',
+    "Mécanisme par lequel on attribue à l'extérieur (personne, groupe, objet) un contenu psychique qui nous appartient — le plus souvent une part d'Ombre ou d'anima/animus.",
+    "La projection est automatique et inconsciente ; on la repère à l'affect démesuré qu'elle produit. La retirer, c'est reconnaître : « ceci me concerne aussi ». Outil central pour lire les aspects de tension dans un thème (opposition, carré).",
+    "Vivre entouré d'« ennemis » et de « sauveurs » sans jamais s'interroger sur sa propre part.",
+    "Sur qui est-ce que je projette en ce moment le plus d'admiration ou de rejet ?",
+    "Choisissez une personne qui vous obsède (positivement ou négativement). Écrivez : « Ce que je lui prête et qui pourrait me concerner, c'est… »"),
+  concept('synchronicite', "La synchronicité", 'Jung',
+    "Coïncidence signifiante entre un état intérieur et un événement extérieur, sans lien de cause à effet, mais reliés par le sens.",
+    "Jung a proposé ce concept notamment pour penser des phénomènes comme l'astrologie ou le Yi King : non comme des causalités, mais comme des correspondances de sens. C'est une hypothèse, discutée, pas une preuve.",
+    "Voir des « signes » partout ; utiliser la synchronicité pour se dispenser de décider ou de penser.",
+    "Quelle coïncidence récente m'a semblé « parler » — et qu'est-ce qu'elle éclairait de mon état du moment ?",
+    "Notez une coïncidence marquante. Décrivez d'abord les faits, puis, séparément, le sens que vous lui donnez."),
+  concept('fonctions', "Les quatre fonctions", 'Jung',
+    "Jung distingue quatre fonctions psychologiques : pensée, sentiment, sensation, intuition. Chacun en privilégie certaines et en néglige d'autres (la fonction « inférieure », mal maîtrisée).",
+    "Rapprochement classique avec les quatre éléments : Feu ≈ intuition, Terre ≈ sensation, Air ≈ pensée, Eau ≈ sentiment. Ce rapprochement est utile mais approximatif et débattu.",
+    "Mépriser sa fonction inférieure ou celle des autres ; se croire « objectif » en ne cultivant que la pensée.",
+    "Quelle fonction (penser, ressentir, percevoir le concret, pressentir l'ensemble) est mon point faible ?",
+    "Sur une décision récente, rejouez-la mentalement en utilisant d'abord votre fonction forte, puis votre fonction faible. Que change le second regard ?"),
+]
+
+function concept(
+  id: string,
+  nom: string,
+  categorie: string,
+  definition: string,
+  developpement: string,
+  ombre: string,
+  question: string,
+  exercice: string,
+): GenericConcept {
+  return {
+    id,
+    nom,
+    categorie,
+    sources: ['traditionnel', 'rapprochement-moderne'],
+    facets: {
+      definition,
+      symbole: '—',
+      imageArchetypale: '—',
+      mythologie: '—',
+      psychologie: developpement,
+      ombre,
+      potentielEvolutif:
+        "Reconnaître ce mécanisme, c'est cesser d'être entièrement agi par lui : la conscience gagne un peu de jeu.",
+      questionReflexion: question,
+      exercice,
+    },
+  }
+}
+
+export const JUNG_BY_ID = Object.fromEntries(JUNG_CONCEPTS.map((c) => [c.id, c])) as Record<string, GenericConcept>
