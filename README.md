@@ -15,6 +15,8 @@ L'astrologie y est étudiée comme **langage symbolique et tradition culturelle*
 comme science démontrée ni comme moyen de prédiction. Distinction systématique entre
 **donnée astronomique calculée** et **interprétation symbolique**.
 
+Déployé sur Vercel avec auto-déploiement à chaque push sur `main`.
+
 ## Démarrer
 
 ```bash
